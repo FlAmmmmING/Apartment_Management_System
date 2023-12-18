@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84392E2A-936D-4AD6-A78B-4E93AB1ECD70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Apartment_Management_System</RootNamespace>
+    <AssemblyName>Apartment_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity.Designer.cs">
+      <DependentUpon>Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddActivity.Designer.cs">
+      <DependentUpon>AddActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddingVisitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingVisitor.Designer.cs">
+      <DependentUpon>AddingVisitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apartment_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Apartment_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dao.cs" />
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentUnion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentUnion.Designer.cs">
+      <DependentUpon>StudentUnion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPassword.Designer.cs">
+      <DependentUpon>ModifyPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalRatingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalRatingDetail.Designer.cs">
+      <DependentUpon>PersonalRatingDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalVisitDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalVisitDetail.Designer.cs">
+      <DependentUpon>PersonalVisitDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RatingForm.Designer.cs">
+      <DependentUpon>RatingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchingStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchingStudentForm.Designer.cs">
+      <DependentUpon>SearchingStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorFormEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitorFormEmp.Designer.cs">
+      <DependentUpon>VisitorFormEmp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Activity.resx">
+      <DependentUpon>Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddActivity.resx">
+      <DependentUpon>AddActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddingVisitor.resx">
+      <DependentUpon>AddingVisitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentUnion.resx">
+      <DependentUpon>StudentUnion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPassword.resx">
+      <DependentUpon>ModifyPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalRatingDetail.resx">
+      <DependentUpon>PersonalRatingDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalVisitDetail.resx">
+      <DependentUpon>PersonalVisitDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RatingForm.resx">
+      <DependentUpon>RatingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchingStudentForm.resx">
+      <DependentUpon>SearchingStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorFormEmp.resx">
+      <DependentUpon>VisitorFormEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Apartment_Management_SystemDataSet.xsc">
+      <DependentUpon>Apartment_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Apartment_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Apartment_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Apartment_Management_SystemDataSet.xss">
+      <DependentUpon>Apartment_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
